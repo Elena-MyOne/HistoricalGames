@@ -1,0 +1,20 @@
+footer{
+	background-color: #000;
+	padding:  29px 0px 29px 0px;
+	.footer {
+		&__text {
+		font-size: 16px;
+		line-height: 1.38;
+		font-weight: 300;
+		letter-spacing: 0.01em;
+		color: #ffffff;
+		text-align: center;
+		@media (max-width: $md3+px){
+			font-size: 14px;
+		}
+		}
+	}
+	
+}
+//==================================================================
+
