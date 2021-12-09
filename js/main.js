@@ -9,12 +9,12 @@ $(function() {
 	$(window).on("scroll", function() {
 		 if($(window).scrollTop() > 50) {
 			  $(".header").addClass("_changeBgc");
-			  $(".header__link_active").addClass("_changeColor");
-			  $(".header__link").addClass("_changeHover");
+			  $(".header__link_active").addClass("_changeColorActive");
+			  $(".header__link").addClass("_changeColor");
 		 } else {
 			 $(".header").removeClass("_changeBgc");
-			 $(".header__link_active").removeClass("_changeColor");
-			 $(".header__link").removeClass("_changeHover");
+			 $(".header__link_active").removeClass("_changeColorActive");
+			 $(".header__link").removeClass("_changeColor");
 		 }
 	});
 });
