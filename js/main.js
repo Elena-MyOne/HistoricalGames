@@ -44,3 +44,18 @@ $(document).ready(function(){
 		$('.item-events__text-four').toggleClass('display-block');
 	});
 });
+
+
+
+$(document).ready(function() {
+	$("#switch-controls").on('click', 'span', function() {
+	  $("#switch img").removeClass("_opaque");
+ 
+	  var newImage = $(this).index();
+ 
+	  $("#switch img").eq(newImage).addClass("_opaque");
+ 
+	  $("#switch-controls span").removeClass("_selected");
+	  $(this).addClass("_selected");
+	});
+ });

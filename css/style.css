@@ -1315,6 +1315,7 @@ main {
 }
 
 .item-gallery__title {
+  display: block;
   height: 61px;
   overflow: hidden;
   padding: 18px 0px 0px 0px;
@@ -1419,6 +1420,19 @@ main {
   content: url("../../img/gallery/page/our_gallery/arrow_icon.png");
   right: 20px;
   bottom: 20;
+}
+
+.gallery-product {
+  padding: 0px 0px 40px 0px;
+  background-color: #E7E7E7;
+}
+
+.gallery-product__title {
+  padding: 50px 0px;
+}
+
+.item-gallery__content-product {
+  background-color: #E7E7E7 !important;
 }
 
 .testimonial {
@@ -2570,6 +2584,18 @@ main {
   padding: 0px 0px 105px 0px;
 }
 
+@media (max-width: 992.98px) {
+  .map-gallery__title {
+    padding: 0px 0px 60px 0px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .map-gallery__title {
+    padding: 0px 0px 40px 0px;
+  }
+}
+
 .buy {
   padding: 170px 0px 0px 0px;
 }
@@ -2741,6 +2767,297 @@ main {
 @media (max-width: 767.98px) {
   .item-buy__image img {
     opacity: 0.7;
+  }
+}
+
+.product {
+  padding: 330px 0px 170px 0px;
+}
+
+@media (max-width: 1000px) {
+  .product {
+    padding: 220px 0px 60px 0px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .product {
+    padding: 140px 0px 40px 0px;
+  }
+}
+
+.product__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0px -15px;
+  font-size: 14px;
+}
+
+@media (max-width: 1000px) {
+  .product__body {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+.product__items {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 0px 15px;
+}
+
+@media (max-width: 1000px) {
+  .product__items {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    padding: 0px 0px 0px 0px;
+  }
+}
+
+.item-product__shadow {
+  margin: 0px 0px 40px 0px;
+}
+
+@media (max-width: 500px) {
+  .item-product__shadow {
+    margin: 0px 0px 20px 0px;
+  }
+}
+
+.item-product__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 0px -10px;
+}
+
+@media (max-width: 470px) {
+  .item-product__controls {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.item-product__controls span {
+  display: block;
+  padding: 0px 10px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 22.666%;
+          flex: 0 1 22.666%;
+  width: 86px;
+  height: 63px;
+}
+
+.item-product__controls span img {
+  display: block;
+  width: 86px;
+  height: 63px;
+  margin: 0 auto;
+}
+
+@media (max-width: 470px) {
+  .item-product__controls span img {
+    width: 60px;
+    height: 43px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 25%;
+            flex: 0 1 25%;
+    margin: 0px 0px;
+  }
+}
+
+.item-product__controls span._selected {
+  width: 120px;
+  height: 88px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 32%;
+          flex: 0 1 32%;
+}
+
+@media (max-width: 470px) {
+  .item-product__controls span._selected {
+    width: 60px;
+    height: 43px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 25%;
+            flex: 0 1 25%;
+  }
+}
+
+.item-product__controls span._selected img {
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 1000px) {
+  .item-product__controls span._selected img {
+    width: 130px;
+  }
+}
+
+@media (max-width: 470px) {
+  .item-product__controls span._selected img {
+    width: 60px;
+    height: 43px;
+  }
+}
+
+.item-product__title {
+  font-family: Poppins;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 500;
+  color: #000000;
+  text-align: center;
+}
+
+.item-product__title span {
+  color: #f44336;
+}
+
+@media (max-width: 1000px) {
+  .item-product__title {
+    padding: 40px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .item-product__title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .item-product__title {
+    padding: 20px 0px 0px 0px;
+  }
+}
+
+.item-product__price {
+  font-family: Poppins;
+  font-size: 62px;
+  line-height: 0.77;
+  font-weight: 300;
+  color: #000000;
+  text-align: center;
+  padding: 20px 0px 15px 0px;
+}
+
+@media (max-width: 767.98px) {
+  .item-product__price {
+    font-size: 26px;
+  }
+}
+
+.item-product__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 0px 30px 0px;
+  cursor: pointer;
+}
+
+.item-product__button a {
+  display: block;
+  background-color: #f44336;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  padding: 18px 20px;
+  min-width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .item-product__button a {
+    font-size: 26px;
+    padding: 10px 20px;
+  }
+}
+
+.item-product__text {
+  font-size: 12px;
+  line-height: 2;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  color: #999999;
+  padding: 0px 5px 0px 0px;
+}
+
+#switch {
+  position: relative;
+  width: 100%;
+  height: 290px;
+}
+
+@media (max-width: 500px) {
+  #switch {
+    height: 200px;
+  }
+}
+
+#switch img {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+@media (max-width: 500px) {
+  #switch img {
+    height: 200px;
+  }
+}
+
+#switch img._opaque {
+  opacity: 1;
+  width: 100%;
+  height: 290px;
+  -webkit-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+@media (max-width: 1000px) {
+  #switch img._opaque {
+    width: 470px;
+  }
+}
+
+@media (max-width: 500px) {
+  #switch img._opaque {
+    width: 100%;
+    height: 200px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 
