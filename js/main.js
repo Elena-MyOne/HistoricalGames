@@ -1,4 +1,4 @@
-//burger menu==========================================================
+//header==========================================================
 const headerBurger = document.querySelector(".header__burger");
 const headerMenu = document.querySelector(".header__menu");
 const headerList = document.querySelector(".header__list");
@@ -24,7 +24,6 @@ window.onscroll = function() {
    const headerLink = document.querySelector('.header__link');
 
 	let posTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-	console.log('y=' + posTop);
 
    if (posTop > 50) {
       header.classList.add("_changeBgc");
@@ -37,46 +36,8 @@ window.onscroll = function() {
    }
 }
 
-
-
-
-
-$(document).ready(function(){
-	$('.item-events__item-one').click(function(event){
-		$('.item-events__title-one').toggleClass('open-block');
-		$('.item-events__text-one').toggleClass('display-block');
-	});
-});
-$(document).ready(function(){
-	$('.item-events__item-two').click(function(event){
-		$('.item-events__title-two').toggleClass('open-block');
-		$('.item-events__text-two').toggleClass('display-block');
-	});
-});
-$(document).ready(function(){
-	$('.item-events__item-three').click(function(event){
-		$('.item-events__title-three').toggleClass('open-block');
-		$('.item-events__text-three').toggleClass('display-block');
-	});
-});
-$(document).ready(function(){
-	$('.item-events__item-four').click(function(event){
-		$('.item-events__title-four').toggleClass('open-block');
-		$('.item-events__text-four').toggleClass('display-block');
-	});
-});
-
-
-
-$(document).ready(function() {
-	$("#switch-controls").on('click', 'span', function() {
-	  $("#switch img").removeClass("_opaque");
- 
-	  var newImage = $(this).index();
- 
-	  $("#switch img").eq(newImage).addClass("_opaque");
- 
-	  $("#switch-controls span").removeClass("_selected");
-	  $(this).addClass("_selected");
-	});
- });
+//Tabs News and Events=======================================================
+let openTab = function (title, text) {
+   title.classList.toggle('open-block');
+   text.classList.toggle('display-block');
+}
