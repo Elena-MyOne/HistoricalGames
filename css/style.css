@@ -1511,9 +1511,11 @@ main {
 }
 
 .testimonial__content::before {
+  display: inline-block;
   padding: 10px 0px;
   position: absolute;
-  content: url("../../img/testimonial/2.png");
+  content: url("../img/testimonial/2.png");
+  z-index: 5;
   top: 15px;
   left: 0;
   width: 37px;
@@ -1522,9 +1524,10 @@ main {
 }
 
 .testimonial__content::after {
-  padding: 10px 0px;
   position: absolute;
-  content: url("../../img/testimonial/3.png");
+  content: url("../img/testimonial/3.png");
+  display: inline-block;
+  padding: 10px 0px;
   top: 15px;
   right: 0;
   width: 37px;

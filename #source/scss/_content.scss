@@ -669,9 +669,11 @@ padding:  0px 0px 156px 0px;
 		color: #fff;
 		text-align: center;
 		&::before{
+			display: inline-block;
 			padding: 10px 0px;
 			position: absolute;
-			content: url("../../img/testimonial/2.png");
+			content: url("../img/testimonial/2.png");
+			z-index: 5;
 			top: 15px;
 			left: 0;
 			width: 37px;
@@ -679,9 +681,10 @@ padding:  0px 0px 156px 0px;
 			border: 1px solid #fff;
 		}
 		&::after{
-			padding: 10px 0px;
 			position: absolute;
-			content: url("../../img/testimonial/3.png");
+			content: url("../img/testimonial/3.png");
+			display: inline-block;
+			padding: 10px 0px;
 			top: 15px;
 			right: 0;
 			width: 37px;
