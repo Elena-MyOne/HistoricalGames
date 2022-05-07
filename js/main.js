@@ -18,19 +18,27 @@ headerList.addEventListener("click", function(event) {
 });
 
 
-$(function() {
-	$(window).on("scroll", function() {
-		 if($(window).scrollTop() > 50) {
-			  $(".header").addClass("_changeBgc");
-			  $(".header__link_active").addClass("_changeColorActive");
-			  $(".header__link").addClass("_changeColor");
-		 } else {
-			 $(".header").removeClass("_changeBgc");
-			 $(".header__link_active").removeClass("_changeColorActive");
-			 $(".header__link").removeClass("_changeColor");
-		 }
-	});
-});
+window.onscroll = function() {
+   const header = document.querySelector('.header');
+   const headerLinkActive = document.querySelector('.header__link_active');
+   const headerLink = document.querySelector('.header__link');
+
+	let posTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+	console.log('y=' + posTop);
+
+   if (posTop > 50) {
+      header.classList.add("_changeBgc");
+      headerLinkActive.classList.add("_changeColorActive");
+      headerLink.classList.add("_changeColor");
+   } else {
+      header.classList.remove("_changeBgc");
+      headerLinkActive.classList.remove("_changeColorActive");
+      headerLink.classList.remove("_changeColor");
+   }
+}
+
+
+
 
 
 $(document).ready(function(){
